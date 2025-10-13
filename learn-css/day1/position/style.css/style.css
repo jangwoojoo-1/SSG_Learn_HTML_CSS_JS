@@ -1,0 +1,27 @@
+@media screen and (min-width: 601px) and (max-width: 1280px) {
+  body {
+    background-color: blanchedalmond;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: aqua;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  body {
+    background-color: blueviolet;
+  }
+}
+
+h1 {
+  border-bottom: 3px solid black;
+}
+
+span {
+  margin-bottom: 10px;
+  display: block;
+  width: min-content;
+  border: 3px solid red;
+}

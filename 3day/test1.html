@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>입력양식 테스트</title>
+    <style>
+      fieldset {
+        padding: 5px;
+      }
+      ul {
+        margin: 25px 0px;
+        padding-left: 10px;
+      }
+      li {
+        list-style-type: none;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>입력양식 속성</legend>
+        <ul>
+          <li>
+            <label for="id">아이디:</label>
+            <input type="text" name="user_id" id="id" />
+          </li>
+          <li>
+            <label for="password">비밀번호:</label>
+            <input type="password" name="user_pwd" id="password" />
+          </li>
+          <li>
+            <label for="search">검색:</label>
+            <input type="search" name="user_search" id="search" />
+          </li>
+          <li>
+            <label for="email">이메일:</label>
+            <input type="email" name="user_email" id="email" />
+          </li>
+          <li>
+            <label for="ph">전화번호:</label>
+            <input
+              type="tel"
+              name="user_phone"
+              id="ph"
+              pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+            />
+          </li>
+          <li>
+            <label for="co">컬러선택:</label>
+            <input type="color" name="user_color" value="black" />
+          </li>
+          <li>
+            <label for="count">수량:</label>
+            <input
+              type="number"
+              id="count"
+              name="user_count"
+              min="0"
+              value="1"
+              style="width: 40px"
+            />
+          </li>
+          <li>
+            <label for="satisfaction">만족도:</label>
+            <input
+              type="range"
+              id="satisfaction"
+              name="user_stf"
+              min="0"
+              max="10"
+              value="0"
+            />
+          </li>
+          <li>
+            <label
+              >예<input type="radio" name="yn" value="yes" checked
+            /></label>
+            <label>아니오<input type="radio" name="yn" value="no" /></label>
+          </li>
+          <li>
+            <label
+              >html<input type="checkbox" name="language" value="html" checked
+            /></label>
+            <label
+              >css<input type="checkbox" name="language" value="css"
+            /></label>
+          </li>
+          <li>
+            <input type="button" name="send" value="전송" />
+          </li>
+          <li>
+            <input type="reset" name="cancel" value="취소" />
+          </li>
+          <li>
+            <input type="submit" name="confirm" value="확인" />
+          </li>
+          <li>
+            <input type="image" src="image/bt.png" alt="검색" value="검색" />
+          </li>
+          <li>
+            <input type="file" name="user_file" />
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </body>
+</html>

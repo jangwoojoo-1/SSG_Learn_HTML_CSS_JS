@@ -1,0 +1,27 @@
+/* 이미지 스타일링 */
+.pic img {
+  width: 100%; /* 이미지가 .pic 에 가득차도록 */
+  height: auto; /* 이미지의 비율을 유지 */
+}
+.container {
+  display: flex;
+  flex-wrap: wrap; /*wrap -> 여러 줄 표시 가능*/
+  justify-content: space-around;
+  gap: 10px;
+}
+.pic {
+  /*너비 1025이상일 때(기본) -> 1줄에 3개씩*/
+  flex-basis: 33%;
+}
+@media screen and (max-width: 768px) {
+  /*미디어 쿼리 최대 768px까지 이미지 크기 너비 꽉 차게 -> 1줄에 1개씩*/
+  .pic {
+    flex-basis: 100%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /*미디어 쿼리 - 769-1024px 사이 -> 1줄에 2개씩*/
+  .pic {
+    flex-basis: 50%;
+  }
+}

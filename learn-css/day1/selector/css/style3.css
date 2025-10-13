@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 600px;
+  text-align: center;
+}
+
+span {
+  color: red;
+  font-weight: bold;
+}
+
+h1 {
+  color: white;
+  background-color: blue;
+  /* width: min-content;
+  height: min-content; */
+  display: inline-block;
+}

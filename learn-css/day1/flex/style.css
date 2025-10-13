@@ -1,0 +1,17 @@
+body {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: steelblue;
+}
+
+#second {
+  background-color: blueviolet;
+}
