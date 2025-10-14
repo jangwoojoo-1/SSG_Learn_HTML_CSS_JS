@@ -1,0 +1,11 @@
+/* 모든 페이지의 공통되는 기본 양식을 미리 global.css에 작성하고, 
+이후 이 파일을 각 css 파일에 import 하는 방식으로 구현 */
+@import './global.css';
+
+ul {
+  list-style-type: none;
+  padding-left: 5px;
+}
+li {
+  padding-bottom: 5px;
+}
