@@ -3,13 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>find movie</title>
     <link rel="stylesheet" href="css/find.css" />
   </head>
   <body>
-    findhtml
-    <form action="mypage.html" method="get">
-      <input type="submit" value="myprofile로 이동" />
+    <form class="find-search-bar-form display-flex-center">
+      <div class="display-flex-center display-relative">
+        <input
+          class="find-search__bar"
+          type="text"
+          name="find-serarch-bar-form"
+          placeholder="검색하기"
+        />
+        <span class="material-symbols-outlined"> search </span>
+      </div>
     </form>
+    <div class="main-movie display-flex-center">
+      <img src="image/find-bestMovie-img.jpg" alt="이미지1" />
+      <span class="material-symbols-outlined"> play_circle </span>
+    </div>
+    <div class="desc-moive">
+      <p class="desc-movie__subtext">지금 가장 흥행하는 작품은?</p>
+      <h1 class="desc-movie__maintext">승리호</h1>
+    </div>
   </body>
 </html>

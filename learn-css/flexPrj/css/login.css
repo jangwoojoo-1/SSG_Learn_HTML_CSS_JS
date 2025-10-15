@@ -2,10 +2,57 @@
 이후 이 파일을 각 css 파일에 import 하는 방식으로 구현 */
 @import './global.css';
 
-ul {
-  list-style-type: none;
-  padding-left: 5px;
+html,
+body {
+  overflow: hidden;
 }
-li {
-  padding-bottom: 5px;
+.head-image {
+  display: flex;
+  justify-content: center;
+}
+.login-title {
+  text-align: center;
+}
+.login-title__maintext {
+  font-size: 2rem;
+  color: var(--purple);
+}
+.login-title__subtext {
+  font-size: 0.8rem;
+  font-weight: 220;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+}
+.login-form input {
+  padding: 15px 0;
+  margin: 0 10px;
+  background-color: var(--background-purple);
+  font-size: 1.5rem;
+}
+.login-form input[type='submit'] {
+  color: white;
+  background-color: var(--darkpurple);
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+.login-form input[type='submit']:active {
+  background-color: var(--purple);
+}
+.login-form input:not([type='submit']) {
+  color: white;
+  border-bottom: 1px solid var(--boarder);
+  transition: border-color 0.3s ease-in-out;
+}
+.login-form input:focus {
+  border-color: white;
+}
+
+@media screen and (min-width: 1000px) {
+  .login-form {
+    max-width: 1000px;
+    margin: 1.5rem auto;
+  }
 }
