@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>연습문제 2</title>
-</head>
-<body>
-	
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습문제 2</title>
+    <style>
+      form {
+        margin-bottom: 30px;
+      }
+      input[type='text'] {
+        width: 20px;
+        height: 15px;
+        text-align: center;
+      }
+      button {
+        margin-left: 5px;
+      }
+      table {
+        width: 400px;
+      }
+      table,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label><input type="text" id="row" />행</label>
+      <label><input type="text" id="column" />열</label>
+      <button>작성</button>
+    </form>
+    <div></div>
+    <script>
+      const button = document.querySelector('button');
+      button.addEventListener('click', function () {
+        event.preventDefault();
+
+        const tableNode = document.createElement('table');
+        const row = document.getElementById('row');
+        const column = document.getElementById('column');
+
+        for (let i = 0; i < row.value; i++) {
+          let trNode = document.createElement('tr');
+          for (let j = 0; j < column.value; j++) {
+            let tdNode = document.createElement('td');
+            let textNode = document.createTextNode(i + ', ' + j);
+            tdNode.appendChild(textNode);
+            trNode.appendChild(tdNode);
+          }
+          tableNode.appendChild(trNode);
+        }
+
+        const div = document.querySelector('div');
+        div.innerHTML = '';
+        div.appendChild(tableNode);
+
+        row.value = '';
+        column.value = '';
+      });
+    </script>
+  </body>
 </html>

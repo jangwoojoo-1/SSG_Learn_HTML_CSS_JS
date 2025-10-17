@@ -279,3 +279,16 @@ div{
 
 5. 3번 -> pop() 메서드는 마지막 값을 꺼냄
 
+
+19장
+
+1. DOM은 Document Object Model의 약자 -> 정답 1
+
+2. HTML 문서가 와전히 로드된 후에 자바스크립트 코드를 실행할 때 가장 적절한 이벤트는 DOMContentLoaded -> 정답 2
+
+3. 자바스크립트로 스타일을 직접 변경하려면 요소.style 속성을 사용해야 함 -> 정답 1
+
+4. <ul> 요소 내부에 새로운 <li> 요소를 추가할 때 자바스크립트에서 사용하는 메서드는 appendChild() -> 정답 1
+
+5. DOM에서 요소의 텍스트 내용르 변경할 때 사용할 수 있는 속성은 innerHTML, innerText, textContent -> 정답 3
+
